@@ -21,8 +21,8 @@
         'views/account_payment.xml',
         'views/account_payment_register.xml',
     ],
-    # only loaded in demonstration mode
     'images': ['static/description/images/images.jpg','static/description/images/images.jpg'],
+    # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
     ],

@@ -11,13 +11,8 @@
                <field name="allow_transfer_expense"/>
                <field name="transfer_expenses" attrs="{'invisible':[('allow_transfer_expense', '=', False)],'required':[('allow_transfer_expense', '=', True)]}"/>
                <field name="transfer_expenses_amount" attrs="{'invisible' : [('transfer_expenses', '=' , False)],'required':[('transfer_expenses', '=', True)]}"/>
-        
-               <!--<field name="transfer_expenses_tax" attrs="{'invisible':[('allow_transfer_expense', '=', False)],'required':[('allow_transfer_expense', '=', True)]}"/>-->
-               <!--<field name="transfer_expenses_percentage" attrs="{'invisible' : [('transfer_expenses_tax', '=' , False)],'required':[('transfer_expenses_tax', '=', True)]}"/>-->
-               <!--<field name="tax_percentage_amount" attrs="{'invisible' : [('transfer_expenses_tax', '=' , False)],'required':[('transfer_expenses_tax', '=', True)]}"/>-->
-
                <field name="taxes_id" widget="many2many_tags" attrs="{'invisible':[('allow_transfer_expense', '=', False)],'required':[('allow_transfer_expense', '=', True)]}" domain="[('type_tax_use','=','purchase')]" context="{'default_type_tax_use': 'purchase', 'search_view_ref': 'account.account_tax_view_search'}" options="{'no_create': True}"/>
-               <field name="price_tax" attrs="{'invisible':[('allow_transfer_expense', '=', False)]}"/>
+               <!--<field name="price_tax" attrs="{'invisible':[('allow_transfer_expense', '=', False)]}"/>-->
 
             </xpath>
          </field>
