@@ -22,6 +22,7 @@
         'views/account_payment_register.xml',
     ],
     # only loaded in demonstration mode
+    'images': ['static/description/images/images.jpg','static/description/images/images.jpg'],
     'demo': [
         'demo/demo.xml',
     ],
